@@ -1,0 +1,91 @@
+/* Estilo mobile firts */
+
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+header {
+    background-color: #3b3b3b;
+    padding: 0.8rem;
+    /*media 1, topo. media 2, lado direito, medida 3, baixo, media 4, lado esquerdo */
+    border-radius: 7px;
+}
+
+.cabecalho {
+    text-align: center;
+}
+
+header h4 {
+    color: #fff;
+    text-align: center;
+}
+.cabecalho {
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 0.5rem;
+}
+
+.banner-content {
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h4 {
+    color: rgb(47, 226, 134);
+}
+
+
+/* Tablet ou maior */
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        /*tornar os elementos filhos em felx, maleaveis atraves de blocos de codigos*/
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .courses-title {
+        text-align: center;
+        color: #fff;
+    }
+
+    .courses-title span { /*muda a cor do span no html "cursos"*/
+        color: rgb(27, 161, 92);
+    }
+    .course {
+        background-color: #4d4d4d;
+        padding-bottom: 0.5rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .course-content {
+        text-align: center;
+        color: #fff;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    header {
+      background-color: red;
+    }
+
+    .banner img {
+        padding: 0rem 4rem;
+    }
+  }
+  
