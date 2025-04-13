@@ -2,15 +2,14 @@
 
 
 body {
-    background-color: black;
+    background-color: #242323;
     font-family: sans-serif;
     margin: auto;
 }
 
 header {
-    background-color: #3b3b3b;
-    padding: 0.8rem;
-    /*media 1, topo. media 2, lado direito, medida 3, baixo, media 4, lado esquerdo */
+    background-color: rgb(56, 56, 56);
+    padding: 0.8rem; /*media 1, topo. media 2, lado direito, medida 3, baixo, media 4, lado esquerdo */
     border-radius: 7px;
 }
 
@@ -41,14 +40,100 @@ header a {
     color: rgb(47, 226, 134);
 }
 
+.course {
+    background-color: #4d4d4d;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
+}
+
+.footer-icons {
+    width: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer h3 span {
+    color:  rgb(27, 161, 92);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Tablet ou maior */
 @media (min-width: 768px) {
     header {
+        background-color: rgb(26, 53, 53);
         display: flex;
         /*tornar os elementos filhos em felx, maleaveis atraves de blocos de codigos*/
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between; /*Os itens são distribuídos igualmente no espaço disponível*/
     }
 
     .banner {
@@ -65,16 +150,13 @@ header a {
     .courses-title span { /*muda a cor do span no html "cursos"*/
         color: rgb(27, 161, 92);
     }
-    .course {
-        background-color: #4d4d4d;
-        padding-bottom: 0.5rem;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
-    }
 
-    .course-content {
-        text-align: center;
-        color: #fff;
+    .courses {
+        display: flex;
+        padding: 0 15px 0 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*Define quantas colunas vai ter o layout e qual o tamanho de cada uma.        */
+        gap: 1rem; /*Serve para ajustar o espaçamento entre elementos*/
     }
 
 }
@@ -86,6 +168,14 @@ header a {
 
     .banner img {
         padding: 0rem 4rem;
+    }
+
+    .courses {
+        display: flex;
+        padding: 0 15px 0 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /*Define quantas colunas vai ter o layout e qual o tamanho de cada uma.        */
+        gap: 1rem; /*Serve para ajustar o espaçamento entre elementos*/
     }
   }
   
