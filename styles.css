@@ -48,10 +48,12 @@ header a {
     color: #fff;
 }
 
-.footer {
+.course-content {
     text-align: center;
     color: #fff;
-}
+    text-decoration: none;
+  }
+
 
 .footer-icons {
     width: 30px;
@@ -59,79 +61,25 @@ header a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1rem;  
 }
+
+.footer-content {
+    color: #fff;
+    text-align: center;
+  }
 
 .footer h3 span {
     color:  rgb(27, 161, 92);
 }
 
 
+/* TABLET OU MAIOR QUE 768px */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet ou maior */
 @media (min-width: 768px) {
     header {
         background-color: rgb(26, 53, 53);
-        display: flex;
-        /*tornar os elementos filhos em felx, maleaveis atraves de blocos de codigos*/
+        display: flex; /*Tornar os elementos filhos em felx, maleaveis atraves de blocos de codigos*/
         align-items: center;
         justify-content: space-between; /*Os itens são distribuídos igualmente no espaço disponível*/
     }
@@ -147,7 +95,7 @@ header a {
         color: #fff;
     }
 
-    .courses-title span { /*muda a cor do span no html "cursos"*/
+    .courses-title span { /*Muda a cor do span no html "cursos"*/
         color: rgb(27, 161, 92);
     }
 
@@ -160,6 +108,8 @@ header a {
     }
 
 }
+
+/* NOTEBOOK OU MAIOR QUE 1024px */
 
 @media (min-width: 1024px) {
     header {
